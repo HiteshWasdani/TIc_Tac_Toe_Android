@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hitesh.tictac.MainActivity">
+
+    <TextView
+        android:id="@+id/WinText"
+        android:layout_width="171dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="30dp"
+        android:text="Red Player Won"
+        android:textAlignment="center"
+        android:textColor="?attr/colorControlActivated"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="12dp"
+        android:onClick="Replay"
+        android:text="Replay"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WinText" />
+
+    <GridLayout
+        android:id="@+id/GridL"
+        android:layout_width="333dp"
+        android:layout_height="323dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/board"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Retry">
+
+        <ImageView
+            android:id="@+id/I0"
+            android:layout_width="98dp"
+            android:layout_height="85dp"
+            android:layout_margin="7dp"
+            android:onClick="dropIn"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/I1"
+            android:layout_width="98dp"
+            android:layout_height="85dp"
+            android:layout_margin="7dp"
+            android:onClick="dropIn"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/I2"
+            android:layout_width="98dp"
+            android:layout_height="85dp"
+            android:layout_margin="7dp"
+            android:onClick="dropIn"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/I3"
+            android:layout_width="98dp"
+            android:layout_height="85dp"
+            android:layout_margin="7dp"
+            android:layout_marginTop="20dp"
+            android:onClick="dropIn"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/I4"
+            android:layout_width="98dp"
+            android:layout_height="85dp"
+            android:layout_margin="7dp"
+            android:layout_marginTop="20dp"
+            android:onClick="dropIn"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/I5"
+            android:layout_width="98dp"
+            android:layout_height="85dp"
+            android:layout_margin="7dp"
+            android:layout_marginTop="20dp"
+            android:onClick="dropIn"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/I6"
+            android:layout_width="98dp"
+            android:layout_height="85dp"
+            android:layout_margin="7dp"
+            android:layout_marginTop="20dp"
+            android:onClick="dropIn"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/I7"
+            android:layout_width="98dp"
+            android:layout_height="85dp"
+            android:layout_margin="7dp"
+            android:layout_marginTop="20dp"
+            android:onClick="dropIn"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/I8"
+            android:layout_width="98dp"
+            android:layout_height="85dp"
+            android:layout_margin="7dp"
+            android:layout_marginTop="20dp"
+            android:onClick="dropIn"
+            android:tag="8" />
+
+
+    </GridLayout>
+
+
+</android.support.constraint.ConstraintLayout>
